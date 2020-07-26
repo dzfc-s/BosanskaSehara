@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bosanska Sehara</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    
+    	<style>
+		
+	body {
+	  background: #fff;
+	  font-size: 14px;
+	  font-weight: 400;
+	  font-family: "Source Sans Pro", sans-serif;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  -webkit-font-smoothing: subpixel-antialiased;
+	  color: #666;
+	  line-height: 25px;
+	  -webkit-backface-visibility: hidden;
+	  backface-visibility: hidden;
+	  overflow-x: hidden;
+	}
+	
+	h1, h2, h3, h4 {
+	  font-size: 38px;
+	  font-weight: 700;
+	  font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	.script-font {
+	  font-family: 'Shadows Into Light', cursive;
+	}
+	
+	p {
+	  font-weight: 400;
+	  font-family: "Source Sans Pro", sans-serif;
+	  margin: 0px;
+	  font-size: 25px;
+	}
+	
+	.section-title-header p {
+	  text-align: center;
+	  font-weight: 400;
+	  line-height: 26px;
+	  padding-bottom: 36px;
+	}
+	
+	.section-title {
+	  color: #252525;
+	  font-size: 38px;
+	  text-align: center;
+	  letter-spacing: 1px;
+	  line-height: 1;
+	  margin-bottom: 48px;
+	  padding: 0 10px;
+	  position: relative;
+	}
+	
+	.section-padding {
+	  padding: 70px 0;
+	}
+	
+	.about-profile {
+	  position: relative;
+	  margin: 20px 0 20px 0;
+	}
+	
+	.about-profile .pro-title {
+	  font-weight: 700;
+	  color: #040404;
+	  position: relative;
+	  width: 120px;
+	  display: inline-block;
+	  margin-bottom: 5px;
+	}
+	
+	.navbar-brand {
+	  position: relative;
+	  padding: 0px;
+	}
+	
+	.indigo {
+	  background: #fff;
+	}
+	
+	.navbar-expand-lg .navbar-nav .nav-link {
+	  font-weight: 700;
+	  padding: 0 17px;
+	  margin-top: 15px;
+	  margin-bottom: 15px;
+	  line-height: 40px;
+	  text-transform: uppercase;
+	  cursor: pointer;
+	  background: transparent;
+	}
+	
+	.navbar {
+	  padding: 0;
+	}
+	
+	.hero-area-bg {
+	  background: url(assets/img/hero-area.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	#hero-area {
+	  color: #fff;
+	  overflow: hidden;
+	  position: relative;
+	}
+	
+	#hero-area .overlay {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  top: 0px;
+	  left: 0px;
+	  background: #0c0808;
+	  opacity: 0.6;
+	}
+	
+	#hero-area .contents {
+	  padding: 175px 0px 120px;
+	}
+	
+	#hero-area .contents h5 {
+	  font-size: 50px;
+	}
+	
+	#hero-area .contents .head-title {
+	  color: #fff;
+	  font-size: 80px;
+	  letter-spacing: 10px;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	}
+	
+	#hero-area .contents p {
+	  font-size: 30px;
+	  color: #fff;
+	  font-weight: 400;
+	  line-height: 30px;
+	  margin-bottom: 25px;
+	}
+	
+	#portfolios {
+	  background: #f2f2f2;
+	}
+	
+	.portfolio-img {
+	  overflow: hidden;
+	  display: block;
+	  position: relative;
+	}
+	
+	.portfolio-img img {
+	  width: 100%;
+	}
+	
+	.krenimo {
+	  height: 2em;
+	  font-size: 5em;
+	  background-color: #B0E0E6;
+	  color: white;
+	  padding-top: 50px;
+	  border: none;
+	  border-radius: 50px;
+	  cursor: pointer;
+	  float: center;
+	}
+				
+	.services {
+	  background: #F0F0F0;
+	}
+	
+	.services-item {
+	  background: #fff;
+	  border-radius: 4px;
+	  padding: 48px 20px;
+	  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	  text-align: center;
+	}
+		
+	.services-item .services-content h3 {
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	}
+	
+	.services-item .services-content h3 a {
+	  font-size: 18px;
+	  text-transform: uppercase;
+	  color: #666;
+	}
+	
+	.services-item .services-content h3 a:hover {
+	  color: #00b4d9;
+	}
+		
+	.services-item .services-content p {
+	  line-height: 22px;
+	}
+	
+	.services-item:hover {
+	  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+	}
+
+	.form-control {
+	  width: 100%;
+	  margin-bottom: 20px;
+	  font-size: 14px;
+	  border-radius: 0;
+	  padding: 8px 10px;
+	  border: 1px solid #e1e1e1;
+	}
+		
+	.contact-form-area {
+	  background: #fff;
+	  box-shadow: 0 0 30px #ededed;
+	  padding: 60px 40px;
+	}
+	
+	.contact-form-area h2 {
+	  font-size: 18px;
+	  text-transform: uppercase;
+	}
+		
+	.footer-right-contact {
+	  padding: 4px;
+	  border: 1px solid #e1e1e1;
+	  margin-top: 30px;
+	}
+	
+	.footer-right-contact .single-contact {
+	  margin: 10px 22px;
+	  padding: 3px 55px;
+	  position: relative;
+	  color: #666;
+	}
+	
+	.footer-right-contact .single-contact p {
+	  margin-bottom: 5px;
+	}
+	
+	.footer-right-contact .single-contact p a {
+	  color: #666;
+	}
+	
+	.footer-right-contact .contact-icon {
+	  background: #00b4d9;
+	  color: #fff;
+	  border-radius: 50%;
+	  font-size: 20px;
+	  height: 40px;
+	  left: 0;
+	  padding-top: 8px;
+	  position: absolute;
+	  text-align: center;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	  width: 40px;
+	}
+	
+	#contact {
+	  position: relative;
+	  overflow: hidden;
+	}
+		
+	#contact #contactForm {
+	  margin-top: 30px;
+	}
+	
+	.text-danger {
+	  font-size: 14px;
+	  margin-top: 10px;
+	}
+	
+	.list-unstyled li {
+	  color: #d9534f;
+	}
+	
+	#conatiner-map {
+	  margin-top: 30px;
+	  text-align: center;
+	  background-color: #fff;
+	  height: 370px;
+	  z-index: 101;
+	  width: 100%;
+	}
+		
+    </style>
+</head>
+<body>
+
+<header>
+      <nav class="navbar navbar-expand-lg fixed-top indigo">
+        <div class="container">
+          <div class="navbar-header"><img width=50 src="assets/img/logo.jpg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-center clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  Pocetna
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  O nama
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">
+                  Odabir
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sudjeluj">
+                  Sudjeluj
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-md-12 text-center">
+              <div class="contents">
+                <h5 class="script-font">Dobro dosli</h5>
+                <br><br>
+                <h2 class="head-title">Bosanska Sehara</h2>
+                <br><br><br>
+              </div>
+              <h4 class="script-font">"Putovati znaci razvijati se." -Pjer Bernardo</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/prva.jpg">
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper">
+              <h3>Zdravo!</h3>
+              <p> Ukoliko ste se odlucili na putovanje unutar granice nase male, ali veoma bogate drzave, na pravom ste mjestu.
+              Organizacija "Bosanska Sehara" pruza Vam uslugu odabira mjesta za odmor po vasim mjerama. Nudimo vam najljepse 
+              lokacije koje ce zadovoljiti vase kriterije. 
+              <br>
+              Takodje, kako biste unaprijedili nas rad, a time i turizam nase drzave, dodajte lokaciju koju poznajete, 
+              a nije na nasoj listi. 
+              <br>
+              Hvala sto vjerujete u nas!
+              </p>
+              
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+    
+     <section id="portfolios" class="section-padding">
+      <div class="container">        
+        <h2 class="section-title">Zelis pronaci lokaciju za odmor po svojim mjerama?</h2>
+        <div class="row">          
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+           <div class="profile-wrapper text-center">  
+             
+             	<br><br>
+              <div class="krenimo"> 
+             <a href="krenimo.html">KRENIMO</a>
+             </div>
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/druga.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="sudjeluj" class="section-padding">
+      <div class="container">        
+        <h2 class="section-title">Zelis nam pomoci i dodati lokaciju koja jos uvijek nije na nasoj listi?</h2>
+        <div class="row"> 
+        	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/druga.jpg">
+            </div>
+          </div>         
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+           <div class="profile-wrapper text-center">  
+           <h3>Prijavi se/Registruj se</h3>
+				<form action="login.html" method="post">
+				<input type="text" class="form-control" name="name" required="required"  placeholder="Ime">
+				<input type="password" class="form-control" name="password" required="required"  placeholder="Sifra">
+				<button type="submit" class="btn btn-common" id="subm">Submit</button>
+				</form>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="section-padding">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="row contact-form-area">          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="contact-block">
+                <h2>Kontakt forma</h2>
+                <form method="post" id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ime" required data-error="Molimo Vas, unesite ime..">
+                        <div class="help-block with-errors"></div>
+                      </div>                                 
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Molimo Vas, unesite email..">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                     <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Predmet" id="msg_subject" class="form-control" required data-error="Molimo Vas, unesite predmet..">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" id="message" placeholder="Vasa Poruka" rows="5" data-error="Napisite poruku" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button">
+                        <button class="btn btn-common" id="submit" type="submit">Posalji</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                  </div>            
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="footer-right-area">
+                <h2>Kontakt adresa</h2>
+                <div class="footer-right-contact">
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                    <p>Tuzla, BiH</p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <p><a href="mailto:sdzafic0@gmail.com">sdzafic0@gmail.com</a></p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <p><a href="#">+ (387) 61 045 600</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+	
+</body>
+</html>
